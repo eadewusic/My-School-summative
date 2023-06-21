@@ -1,28 +1,6 @@
 #!/usr/bin/env bash
 #This script builds an application that will take user input and build the Bachelor of Software Engineering cohort list of students
 
-while true; do
-    echo "=============================="
-    echo "Bachelor of Software Engineering cohort student Management System"
-    echo "=============================="
-    echo "1. Create student record"
-    echo "2. View all students"
-    echo "3. Delete student"
-    echo "4. Update student record"
-    echo "5. Exit"
-    read -p "Enter your choice: " choice
-    echo "=============================="
-
-    case $choice in
-        1) create_student ;;
-        2) view_students ;;
-        3) delete_student ;;
-        4) update_student ;;
-        5) exit ;;
-        *) echo "Invalid choice. Please try again." ;;
-    esac
-done
-
 create_student() {
     read -p "Enter student email: " email
     read -p "Enter student age: " age
@@ -74,3 +52,26 @@ update_student() {
         echo "No students found."
     fi
 }
+
+while true; do
+    echo "------------------------------"
+    echo "Welcome to the Bachelor of Software Engineering cohort student Management System!"
+    echo "Please, choose an option below"
+    echo "=============================="
+    echo "1. Create student record"
+    echo "2. View all students"
+    echo "3. Delete student"
+    echo "4. Update student record"
+    echo "5. Exit"
+    read -p "Enter your choice: " choice
+    echo "-------------------------------"
+
+    case $choice in
+        1) create_student ;;
+        2) view_students ;;
+        3) delete_student ;;
+        4) update_student ;;
+        5) exit ;;
+        *) echo "Invalid choice. Please try again." ;;
+    esac
+done
