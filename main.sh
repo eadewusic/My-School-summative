@@ -3,7 +3,7 @@
 
 while true; do
     echo "=============================="
-    echo "Student Management System"
+    echo "Bachelor of Software Engineering cohort student Management System"
     echo "=============================="
     echo "1. Create student record"
     echo "2. View all students"
