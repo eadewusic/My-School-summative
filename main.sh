@@ -6,7 +6,7 @@ create_student() {
     read -p "Enter student age: " age
     read -p "Enter student ID: " id
 
-    echo "$email,$age,$id" >> students-list_0333.txt
+    echo "$email, $age, $id" >> students-list_0333.txt
 
     echo "Student record created successfully."
 }
@@ -45,7 +45,7 @@ update_student() {
         read -p "Enter updated student email: " email
         read -p "Enter updated student age: " age
 
-        echo "$email,$age,$id" >> students-list_0333.txt
+        echo "$email, $age, $id" >> students-list_0333.txt
 
         echo "Student record updated successfully."
     else
